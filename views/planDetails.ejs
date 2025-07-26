@@ -1,0 +1,8 @@
+<h2><%= plan.name %> Plan</h2>
+<p>Price: <%= plan.price === 0 ? 'Free' : '$' + plan.price %></p>
+<ul>
+  <% plan.features.forEach(f => { %>
+    <li><%= f %></li>
+  <% }) %>
+</ul>
+<a href="/">Back to Home</a>
